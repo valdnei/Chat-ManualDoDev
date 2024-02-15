@@ -84,7 +84,7 @@ const chatMessage = chat.querySelector('.chat-message');
         login.style.display = "none";
         chat.style.display = "flex";
 
-        websocket = new WebSocket('ws://localhost:8080');
+        websocket = new WebSocket('wss://chat-backend-djgn.onrender.com');
         websocket.onmessage = processMessage
     }
     
